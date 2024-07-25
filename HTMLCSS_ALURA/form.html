@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="./styles/formstyle.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            Formulário HTML 5
+        </h1>
+    </header>
+    <div class="form-container">
+        <form class="form" id="form" method="post" target="_blank">
+            <h2 class="subtitulo">Cadastro</h2>
+            <div class="input-container">
+                <label for="name">Nome completo:</label>
+                <input class="input" name="name" id="name" placeholder="Insira seu nome..." required>
+                <a>Campo Obrigatório*</a>
+            </div>  
+            <div class="input-container">
+                <label for="cpf">CPF:</label>
+                <input class="input" name="cpf" id="cpf" type="text" placeholder="123.456.789-00" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="input-container">
+                <label for="user">Usuário:</label>
+                <input class="input" name="user" id="user" type="text" placeholder="Insira seu username..." required>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="input-container">
+                <label for="password">Senha:</label>
+                <input class="input" name="password" id="password" type="password" placeholder="Mínimo 8 caracteres..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="input-container">
+                <label for="birthdate">Data de Nascimento:</label>
+                <input class="input" name="birthdate" id="birthdate" type="date" required>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="input-container">
+                <label for="city">Cidade:</label>
+                <input class="input" name="city" id="city" type="text" placeholder="Insira sua cidade..." required>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="input-container">
+                <label for="state">Estado:</label>
+                <select class="input" name="state" id="state" name="state" required>
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <a>Campo Obrigatório*</a>
+            </div>
+            <div class="form-button-container">
+                <button type="submit" >Salvar</button>
+                <button type="reset">Restaurar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

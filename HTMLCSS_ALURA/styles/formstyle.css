@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #171717;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-family: "Krona One", sans-serif;
+  font-weight: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+}
+
+.subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-weight: 1rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 3px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  border: 2px white solid;
+  border-radius: 1.5rem;
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
+  background-color: #1f2029;
+  margin: auto;
+  box-shadow: 0 3px 20px rgba(0, 200, 255, 0.5);
+}
+
+.form-container .form {
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0px;
+}
+
+label {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+
+.form-container .form .input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 4px;
+  border: 2px solid #dfdfdf 
+}
+
+.input-container a {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  visibility: hidden;
+}
+
+.input-container.error.input {
+  border-color: #ff3b25;
+}
+
+.input-container.error a{
+  color: #ff3b25;
+}
+
+.form-button-container {
+    display: flex;
+    padding-top: 15px;
+    gap: 15px;
+}
+
+button {
+    width: 100px;
+    height: 42px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #07040e;
+    transition: 0.1s;
+  }
+
+  button:hover{
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 145, 255) 17.8%, rgb(2, 221, 255) 100.2% );
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+  
+  button:active {
+    transform: scale(0.8) rotate(3deg);
+    transition: 0.5s;
+  }
